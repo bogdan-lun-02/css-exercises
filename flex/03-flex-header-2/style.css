@@ -4,14 +4,29 @@ you'll learn about it later. */
 
 body {
   margin: 0;
+  padding: 0;
   background: #eee;
   font-family: Besley, serif;
 }
 
 .header {
+  margin: 8px;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-header {
+  display: flex;
+  gap: 16px;
+}
+
+.right-header {
+  display: flex;
+  gap: 16px;
 }
 
 .profile-image {
@@ -23,6 +38,7 @@ body {
 }
 
 .logo {
+  margin: 0 10px;
   color: rebeccapurple;
   font-size: 32px;
   font-weight: 900;
@@ -44,5 +60,8 @@ a {
 }
 
 ul {
+  display: flex;
   list-style-type: none;
+  gap: 10px;
+  padding-left: 0;
 }
